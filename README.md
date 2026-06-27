@@ -33,8 +33,8 @@ The main goal is to help students develop problem-solving and programming skills
 | `COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, and Gemini |
 | `STUDENT_WORKFLOW_FREE.md` | Detailed workflow for students using free AI plans |
 | `STUDENT_WORKFLOW_SUBSCRIPTION.md` | Detailed workflow for students using ChatGPT Plus, Claude Pro, Gemini Pro, Claude Code, Gemini CLI, or similar tools |
-| `SUBMISSION_TEMPLATE.md` | Template for `submission.md`, required for every learning log |
-| `AI_REFLECTION_TEMPLATE.md` | Template for `ai_reflection.md`, required when AI was used |
+| `SUBMISSION_TEMPLATE.md` | Template for `submission.md`, required only for learning-log-required OJ problems |
+| `AI_REFLECTION_TEMPLATE.md` | Template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
 
 Read this `README.md` first.
 
@@ -57,8 +57,8 @@ Students must write by themselves:
 4. explanation of their own algorithm,
 5. final submitted code to the OJ that they understand and can explain,
 6. their own test cases and test results,
-7. their own `submission.md`, when required,
-8. their own `ai_reflection.md`, when AI was used.
+7. their own `submission.md`, when the OJ problem is learning-log required,
+8. their own `ai_reflection.md`, when AI was used on a learning-log-required OJ problem.
 
 Students are not allowed to submit:
 
@@ -80,18 +80,18 @@ The student is responsible for the final answer, final code, OJ submission, and 
 
 ## 4. What Is a Learning Log?
 
-A learning log is a GitHub folder for one OJ problem.
+A learning log is a GitHub folder for one OJ problem that is specifically marked as learning-log required by the instructor or in the OJ.
 
-It records the student's problem-solving process and, if AI was used, the student's AI reflection.
+It records the student's problem-solving process and, if AI was used for that learning-log-required problem, the student's AI reflection.
 
 A learning log may contain:
 
 | File | Meaning |
 |---|---|
 | `submission.md` | The student's problem-solving record |
-| `ai_reflection.md` | The student's reflection on AI use |
+| `ai_reflection.md` | The student's reflection on AI use, required only if AI was used |
 
-Use one folder per OJ problem.
+Use one folder per learning-log-required OJ problem.
 
 Folder names must follow this format:
 
@@ -137,9 +137,7 @@ Writing code at this step is optional.
 
 The purpose of this step is to show that the student tried to understand and plan the solution before using AI.
 
-If the problem requires a learning log, this initial thinking must be written in `submission.md`.
-
-If the student uses AI, this initial thinking must be written in `submission.md` before asking AI.
+If the problem is learning-log required, this initial thinking must be written in `submission.md`.
 
 ### Step 3: Decide Whether to Use AI
 
@@ -173,9 +171,13 @@ Submit the final code to the course OJ.
 
 The OJ result is the official result for correctness.
 
-### Step 7: Submit Learning Log Files if Required
+### Step 7: Submit a Learning Log Only If Required
 
-Create and push learning log files to your own GitHub repository when required by Section 6.
+Create and push a learning log to your own GitHub repository only when the OJ problem is marked as learning-log required.
+
+If the problem is not learning-log required, no GitHub learning log is required, even if AI was used.
+
+However, students are still responsible for understanding and explaining their final code and AI use when asked.
 
 ---
 
@@ -192,24 +194,49 @@ For every assigned OJ problem, students must submit final code to the course OJ.
 
 ### 6.2 GitHub Learning Log Submission
 
-Students must submit a GitHub learning log in the following cases:
+Students must submit a GitHub learning log only for OJ problems that are marked as learning-log required.
 
-| Situation | GitHub learning log required? | `submission.md` required? | `ai_reflection.md` required? |
-|---|---:|---:|---:|
-| Normal OJ practice, no AI used, not marked as learning log | No | No | No |
-| OJ problem marked as learning log required, no AI used | Yes | Yes | No |
-| Any OJ problem where AI was used | Yes | Yes | Yes |
+| Situation | Submit to OJ? | GitHub learning log required? | `submission.md` required? | `ai_reflection.md` required? |
+|---|---:|---:|---:|---:|
+| Normal OJ problem, no AI used | Yes | No | No | No |
+| Normal OJ problem, AI used | Yes | No | No | No |
+| Learning-log-required OJ problem, no AI used | Yes | Yes | Yes | No |
+| Learning-log-required OJ problem, AI used | Yes | Yes | Yes | Yes |
 
 Important rules:
 
-- If AI was used, students must submit both `submission.md` and `ai_reflection.md`.
-- `submission.md` is used to show what the student understood, tried, tested, and submitted.
-- `ai_reflection.md` is used to explain how AI was used and what the student verified independently.
-- If no AI was used and the problem is not marked as learning log required, students only submit to the OJ.
+- A GitHub learning log is required only when the OJ problem is marked as learning-log required.
+- For every learning-log-required problem, students must submit `submission.md`.
+- If AI was used on a learning-log-required problem, students must also submit `ai_reflection.md`.
+- For non-learning-log problems, students do not need to submit `submission.md` or `ai_reflection.md`, even if AI was used.
+- However, students may be randomly asked to explain their problem understanding, algorithm, code, test cases, and AI use.
 
 ---
 
-## 7. When to Use `SUBMISSION_TEMPLATE.md`
+## 7. Responsibility for AI Use on Non-Learning-Log Problems
+
+Students may use AI for OJ problems that are not marked as learning-log required.
+
+For these problems, students do not need to submit a GitHub learning log.
+
+However, using AI does not remove the student's responsibility.
+
+Students must still be able to explain:
+
+1. their problem understanding,
+2. their algorithm,
+3. their code,
+4. their test cases,
+5. how AI helped, if AI was used,
+6. what they verified by themselves.
+
+The instructor may randomly ask students to explain their solution or AI use.
+
+If a student cannot explain their submitted code, the submission may be treated as not demonstrating the student's own understanding.
+
+---
+
+## 8. When to Use `SUBMISSION_TEMPLATE.md`
 
 Use `SUBMISSION_TEMPLATE.md` to create a file named:
 
@@ -217,16 +244,13 @@ Use `SUBMISSION_TEMPLATE.md` to create a file named:
 submission.md
 ```
 
-`submission.md` is required when:
-
-1. the OJ problem is marked as learning log required, or
-2. the student used AI for that problem.
+`submission.md` is required only when the OJ problem is marked as learning-log required.
 
 ### When to Start `submission.md`
 
 Start `submission.md` before using AI.
 
-If AI is not used, start `submission.md` while solving the problem if the problem is marked as learning log required.
+If AI is not used, start `submission.md` while solving the learning-log-required problem.
 
 Before using AI, students must fill in at least:
 
@@ -375,7 +399,7 @@ AI may help review clarity or grammar after the student has written the content,
 
 ---
 
-## 8. When to Use `AI_REFLECTION_TEMPLATE.md`
+## 9. When to Use `AI_REFLECTION_TEMPLATE.md`
 
 Use `AI_REFLECTION_TEMPLATE.md` to create a file named:
 
@@ -383,13 +407,13 @@ Use `AI_REFLECTION_TEMPLATE.md` to create a file named:
 ai_reflection.md
 ```
 
-`ai_reflection.md` is required only when AI was used for that problem.
+`ai_reflection.md` is required only when AI was used on a learning-log-required problem.
 
-If AI was used, `submission.md` is also required.
+If AI was used on a non-learning-log problem, `ai_reflection.md` is not required, but the student must still understand and explain the solution when asked.
 
 ### When to Start `ai_reflection.md`
 
-Start `ai_reflection.md` after the first time you use AI for that problem.
+Start `ai_reflection.md` after the first time you use AI for a learning-log-required problem.
 
 You may take brief notes while working.
 
@@ -429,9 +453,9 @@ AI must not:
 
 ---
 
-## 9. Recommended Student GitHub Repository Structure
+## 10. Recommended Student GitHub Repository Structure
 
-Each student should create one public GitHub repository for learning log records.
+Each student should create one public GitHub repository for learning-log-required records.
 
 Recommended repository name:
 
@@ -454,7 +478,7 @@ pscp-ai-learning-log/
     └── ai_reflection.md
 ```
 
-Use one folder per OJ problem.
+Use one folder per learning-log-required OJ problem.
 
 Folder names must follow this format only:
 
@@ -481,14 +505,14 @@ The repository should contain only the student's own problem-solving records, ow
 
 ---
 
-## 10. What to Put in Each OJ Folder
+## 11. What to Put in Each Learning Log Folder
 
-Each OJ folder may contain:
+Each learning log folder may contain:
 
 | File | When required | Purpose |
 |---|---|---|
-| `submission.md` | Required for learning-log-required problems and all AI-used problems | Problem-solving record and OJ submission reference |
-| `ai_reflection.md` | Required only if AI was used | Reflection on how AI helped and what the student verified independently |
+| `submission.md` | Required for every learning-log-required problem | Problem-solving record and OJ submission reference |
+| `ai_reflection.md` | Required only if AI was used on that learning-log-required problem | Reflection on how AI helped and what the student verified independently |
 
 Do not include `solution.py` in the GitHub learning log.
 
@@ -501,7 +525,7 @@ oj001/
 └── submission.md
 ```
 
-### Example 2: AI Used
+### Example 2: Learning Log Required, AI Used
 
 ```text
 oj002/
@@ -509,7 +533,7 @@ oj002/
 └── ai_reflection.md
 ```
 
-### Example 3: No AI Used and No Learning Log Required
+### Example 3: No Learning Log Required
 
 No GitHub folder is required.
 
@@ -517,7 +541,7 @@ Only OJ submission is required.
 
 ---
 
-## 11. Final Reminder
+## 12. Final Reminder
 
 AI can help you think, debug, and test.
 
