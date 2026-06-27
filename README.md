@@ -33,10 +33,16 @@ The main goal is to help students develop problem-solving and programming skills
 | `COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, and Gemini |
 | `STUDENT_WORKFLOW_FREE.md` | Detailed workflow for students using free AI plans |
 | `STUDENT_WORKFLOW_SUBSCRIPTION.md` | Detailed workflow for students using ChatGPT Plus, Claude Pro, Gemini Pro, Claude Code, Gemini CLI, or similar tools |
-| `SUBMISSION_TEMPLATE.md` | Template for `submission.md`, required only for learning-log-required OJ problems |
+| `SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
+| `SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
+| `SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
 | `AI_REFLECTION_TEMPLATE.md` | Template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
 
 Read this `README.md` first.
+
+Use `SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
+
+You may read `SUBMISSION_TEMPLATE_sample_no_AI.md` and `SUBMISSION_TEMPLATE_sample_AI.md` to understand the expected level of detail, but you must not copy the sample content into your own submission.
 
 Then read the workflow file that matches your AI plan:
 
@@ -243,6 +249,10 @@ Use `SUBMISSION_TEMPLATE.md` to create a file named:
 ```text
 submission.md
 ```
+
+You may read `SUBMISSION_TEMPLATE_sample_no_AI.md` or `SUBMISSION_TEMPLATE_sample_AI.md` as examples before writing your own `submission.md`.
+
+Do not copy the sample content into your own work.
 
 `submission.md` is required only when the OJ problem is marked as learning-log required.
 
