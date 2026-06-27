@@ -264,23 +264,39 @@ Initial pseudocode or flowchart idea:
 Time spent before using AI:
 ```
 
-If the student does not understand the problem yet, they should honestly write what is unclear.
+If the student does not fully understand the problem yet, they must still write what they currently understand.
+
+The answer may be incomplete or incorrect, but the student must make a genuine attempt before using AI.
 
 Example:
 
 ```text
 Problem understanding:
-I do not fully understand the problem yet. I think the input may contain ..., but I am not sure about ...
+I think this problem asks me to read a list of numbers and find some result from them. I am not fully sure whether the result should be the maximum value, the sum, or something else.
 
 Input:
-Not clear yet.
+I think the input starts with an integer n, followed by n numbers. I am not sure if the numbers are on one line or multiple lines.
 
 Output:
-Not clear yet.
+I think the program should print one number as the answer. I need to check the exact meaning of the expected output.
+
+Constraints:
+I think n may be large, so a simple loop may be needed. I am not sure about the maximum value of n.
+
+Edge cases:
+- n = 1
+- all numbers are the same
+- negative numbers may appear, if allowed
 
 Initial pseudocode or flowchart idea:
-I cannot write full pseudocode yet, but I think the first step might be ...
+1. Read n
+2. Read the numbers
+3. Store or process the numbers
+4. Compute the required result
+5. Print the answer
 ```
+
+Do not write only "not clear yet." Write the best current understanding, even if it may be wrong.
 
 ### When to Finish `submission.md`
 
