@@ -8,7 +8,6 @@ Use a tool-specific workflow when one is provided:
 
 - `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md`
 - `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md`
-- `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md`
 
 GitHub Copilot in VS Code and other VS Code AI extensions are not part of the official workflow unless explicitly allowed by the instructor.
 
@@ -79,7 +78,7 @@ Examples:
 |---|---|
 | OpenAI coding agents | ChatGPT Codex, OpenAI Codex, Codex CLI |
 | Claude coding agents | Claude Code, Claude Cowork |
-| CLI or terminal AI tools | Gemini CLI, other terminal-based agents |
+| CLI or terminal AI tools | Codex CLI or other instructor-approved terminal-based agents |
 | Other AI coding agents | Any tool that can read files, edit code, or run commands |
 
 If a tool can read, write, or suggest code directly in the coding environment, use this workflow.
@@ -107,7 +106,6 @@ If your instructor provides a tool-specific workflow, read it too:
 |---|---|
 | ChatGPT Codex / OpenAI Codex / Codex CLI | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
 | Claude Code / Claude Cowork | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
-| Gemini CLI | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
 
 ---
 

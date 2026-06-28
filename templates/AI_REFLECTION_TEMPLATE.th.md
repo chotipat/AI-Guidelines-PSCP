@@ -29,7 +29,6 @@
 - `instructions/COURSE_AI_INSTRUCTIONS.md`
 - `instructions/AGENTS.md`
 - `instructions/CLAUDE.md`
-- `instructions/GEMINI.md`
 
 ---
 

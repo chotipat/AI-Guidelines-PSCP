@@ -40,7 +40,6 @@ Claude
 Gemini
 ChatGPT Codex / OpenAI Codex / Codex CLI
 Claude Code
-Gemini CLI
 Other: ...
 ```
 

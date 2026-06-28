@@ -32,7 +32,7 @@ Pass
 
 Which AI tool did you use?
 
-Example: ChatGPT, Claude, Gemini, Claude Code, Gemini CLI, or another tool.
+Example: ChatGPT, Claude, Gemini web chat, Claude Code, Codex, or another approved tool.
 
 ```text
 ChatGPT
