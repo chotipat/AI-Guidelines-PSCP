@@ -14,11 +14,11 @@ This repository explains how students should use AI tools in this course.
 
 AI may be used as:
 
-- a problem-solving coach
-- a pseudocode or flowchart reviewer
-- a debugging assistant
-- a test-case generator
-- a reflection helper
+- a problem-solving coach,
+- a pseudocode or flowchart reviewer,
+- a debugging assistant,
+- a test-case generator,
+- a reflection helper.
 
 AI must not be used as a replacement for the student's own thinking.
 
@@ -30,13 +30,19 @@ The main goal is to help students develop problem-solving and programming skills
 
 | File | Purpose |
 |---|---|
-| `COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, and Gemini |
-| `STUDENT_WORKFLOW_FREE.md` | Detailed workflow for students using free AI plans |
-| `STUDENT_WORKFLOW_SUBSCRIPTION.md` | Detailed workflow for students using ChatGPT Plus, Claude Pro, Gemini Pro, Claude Code, Gemini CLI, or similar tools |
+| `COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini, and similar AI tools |
+| `STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface, such as ChatGPT, Claude, or Gemini |
+| `STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI tools that work inside VS Code, an IDE, terminal, CLI, or coding-agent environment |
+| `STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code or Claude Cowork, when provided by the instructor |
+| `STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI, when provided by the instructor |
+| `STUDENT_WORKFLOW_CURSOR.md` | Tool-specific workflow for Cursor, when provided by the instructor |
+| `STUDENT_WORKFLOW_GITHUB_COPILOT.md` | Tool-specific workflow for GitHub Copilot, when provided by the instructor |
+| `STUDENT_WORKFLOW_VSCODE_AI_EXTENSIONS.md` | Tool-specific workflow for VS Code AI extensions and similar tools, when provided by the instructor |
 | `SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
 | `SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
 | `SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
-| `AI_REFLECTION_TEMPLATE.md` | Template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
+| `AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
+| `AI_REFLECTION_TEMPLATE_sample.md` | Example of a completed `ai_reflection.md` |
 
 Read this `README.md` first.
 
@@ -44,14 +50,30 @@ Use `SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
 
 You may read `SUBMISSION_TEMPLATE_sample_no_AI.md` and `SUBMISSION_TEMPLATE_sample_AI.md` to understand the expected level of detail, but you must not copy the sample content into your own submission.
 
-Then read the workflow file that matches your AI plan:
+Use `AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` when AI was used on a learning-log-required problem.
 
-- Free plan: read `STUDENT_WORKFLOW_FREE.md`
-- Subscription plan or AI coding tool: read `STUDENT_WORKFLOW_SUBSCRIPTION.md`
+You may read `AI_REFLECTION_TEMPLATE_sample.md` to understand the expected level of detail, but you must not copy the sample content into your own reflection.
 
 ---
 
-## 3. What Students Must Write by Themselves
+## 3. Which Workflow Should I Read?
+
+Choose the workflow based on how the AI tool is used, not based on whether the account is free or paid.
+
+| If you use... | Read this workflow |
+|---|---|
+| ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `STUDENT_WORKFLOW_WEB_CHAT.md` |
+| Claude Code, Claude Cowork, Gemini CLI, Cursor, GitHub Copilot, VS Code AI extensions, AI coding agents, or terminal-based AI tools | `STUDENT_WORKFLOW_CODING_TOOLS.md` first, then the tool-specific workflow if provided |
+
+Important:
+
+- Free or paid account status is not the main distinction.
+- The main distinction is whether the AI is used only as a chat assistant or whether it can work inside the coding environment.
+- If the AI can read files, edit code, run commands, or suggest code directly inside the editor, treat it as a coding tool.
+
+---
+
+## 4. What Students Must Write by Themselves
 
 The following parts must be written by the student. AI may review, ask questions, or give suggestions, but AI must not write these parts for submission.
 
@@ -59,7 +81,7 @@ Students must write by themselves:
 
 1. their own problem understanding,
 2. input, output, and constraint analysis,
-3. initial pseudocode or flowchart idea,
+3. initial pseudocode, flowchart idea, or first plan,
 4. explanation of their own algorithm,
 5. final submitted code to the OJ that they understand and can explain,
 6. their own test cases and test results,
@@ -78,13 +100,13 @@ Students are not allowed to submit:
 
 Students do not need to submit the full AI conversation.
 
-However, when interacting with AI, students must write their own questions, explain the problem in their own words, provide their own pseudocode or algorithm idea, and verify AI suggestions by themselves.
+However, when interacting with AI, students must write their own questions, explain the problem in their own words, provide their own first plan, and verify AI suggestions by themselves.
 
 The student is responsible for the final answer, final code, OJ submission, and explanation.
 
 ---
 
-## 4. What Is a Learning Log?
+## 5. What Is a Learning Log?
 
 A learning log is a GitHub folder for one OJ problem that is specifically marked as learning-log required by the instructor or in the OJ.
 
@@ -112,7 +134,7 @@ Do not use other folder name formats.
 
 ---
 
-## 5. Overall Workflow for Every OJ Problem
+## 6. Overall Workflow for Every OJ Problem
 
 For every assigned OJ problem, follow this overall process.
 
@@ -133,8 +155,7 @@ Problem understanding:
 Input:
 Output:
 Constraints:
-Edge cases:
-Initial pseudocode or flowchart idea:
+First plan:
 ```
 
 This is not necessarily full code.
@@ -145,20 +166,29 @@ The purpose of this step is to show that the student tried to understand and pla
 
 If the problem is learning-log required, this initial thinking must be written in `submission.md`.
 
-### Step 3: Decide Whether to Use AI
+### Step 3: Choose the Correct AI Workflow, If AI Is Used
 
 If the student does not use AI, continue coding in VS Code.
 
-If the student uses AI, read the workflow file that matches the situation:
+If the student uses AI through a browser/chat interface, follow:
 
-- Free plan: `STUDENT_WORKFLOW_FREE.md`
-- Subscription plan or AI coding tool: `STUDENT_WORKFLOW_SUBSCRIPTION.md`
+```text
+STUDENT_WORKFLOW_WEB_CHAT.md
+```
+
+If the student uses an AI coding tool inside VS Code, an IDE, a terminal, CLI, or coding-agent environment, follow:
+
+```text
+STUDENT_WORKFLOW_CODING_TOOLS.md
+```
+
+and the tool-specific workflow if provided.
 
 ### Step 4: Code in VS Code
 
 Write Python code in VS Code.
 
-Use your own pseudocode or flowchart idea as a guide.
+Use your own pseudocode, flowchart idea, or first plan as a guide.
 
 ### Step 5: Test Locally
 
@@ -167,9 +197,9 @@ Run the code in VS Code before submitting to the OJ.
 Check:
 
 - normal cases,
-- boundary cases,
-- edge cases,
-- exact output format.
+- different types of cases,
+- exact output format,
+- cases that may be easy to miss.
 
 ### Step 6: Submit to the OJ
 
@@ -187,18 +217,18 @@ However, students are still responsible for understanding and explaining their f
 
 ---
 
-## 6. What Must Be Submitted?
+## 7. What Must Be Submitted?
 
 There are two possible submission places:
 
 1. the course OJ,
 2. the student's own public GitHub learning log repository.
 
-### 6.1 OJ Submission
+### 7.1 OJ Submission
 
 For every assigned OJ problem, students must submit final code to the course OJ.
 
-### 6.2 GitHub Learning Log Submission
+### 7.2 GitHub Learning Log Submission
 
 Students must submit a GitHub learning log only for OJ problems that are marked as learning-log required.
 
@@ -219,7 +249,7 @@ Important rules:
 
 ---
 
-## 7. Responsibility for AI Use on Non-Learning-Log Problems
+## 8. Responsibility for AI Use on Non-Learning-Log Problems
 
 Students may use AI for OJ problems that are not marked as learning-log required.
 
@@ -242,7 +272,7 @@ If a student cannot explain their submitted code, the submission may be treated 
 
 ---
 
-## 8. When to Use `SUBMISSION_TEMPLATE.md`
+## 9. When to Use `SUBMISSION_TEMPLATE.md`
 
 Use `SUBMISSION_TEMPLATE.md` to create a file named:
 
@@ -269,42 +299,13 @@ Problem understanding:
 Input:
 Output:
 Constraints:
-Edge cases:
-Initial pseudocode or flowchart idea:
-Time spent before using AI:
+First plan:
+Independent time spent on this problem:
 ```
 
 If the student does not fully understand the problem yet, they must still write what they currently understand.
 
 The answer may be incomplete or incorrect, but the student must make a genuine attempt before using AI.
-
-Example:
-
-```text
-Problem understanding:
-I think this problem asks me to read a list of numbers and find some result from them. I am not fully sure whether the result should be the maximum value, the sum, or something else.
-
-Input:
-I think the input starts with an integer n, followed by n numbers. I am not sure if the numbers are on one line or multiple lines.
-
-Output:
-I think the program should print one number as the answer. I need to check the exact meaning of the expected output.
-
-Constraints:
-I think n may be large, so a simple loop may be needed. I am not sure about the maximum value of n.
-
-Edge cases:
-- n = 1
-- all numbers are the same
-- negative numbers may appear, if allowed
-
-Initial pseudocode or flowchart idea:
-1. Read n
-2. Read the numbers
-3. Store or process the numbers
-4. Compute the required result
-5. Print the answer
-```
 
 Do not write only "not clear yet." Write the best current understanding, even if it may be wrong.
 
@@ -324,88 +325,10 @@ Finish `submission.md` after:
 - OJ status,
 - student's problem understanding,
 - input, output, and constraints,
-- edge cases,
-- initial pseudocode or flowchart idea,
-- final algorithm explanation,
-- local test cases and results,
-- time spent before using AI, if AI was used,
-- total time spent on the problem before writing this submission.
-
-### OJ Status Options
-
-Use one of the following:
-
-```text
-Pass
-Not Pass
-Not Submit
-```
-
-Meaning:
-
-- `Pass`: the OJ accepted the solution or all required tests passed.
-- `Not Pass`: the solution was submitted but did not pass all required tests.
-- `Not Submit`: the student has not submitted to the OJ yet.
-
-If the OJ shows the number of passed test cases, include it.
-
-Example:
-
-```text
-OJ status: Not Pass
-OJ submission ID: 184401
-Passed test cases: 7
-Total test cases: 10
-Notes: Wrong answer on hidden cases
-```
-
-If the OJ does not show the number of test cases, write:
-
-```text
-Passed test cases: not shown by OJ
-Total test cases: not shown by OJ
-```
-
-### Time Spent Options
-
-Use these options for time spent fields:
-
-```text
-15-30 minutes
-30-60 minutes
-1-3 hours
-3-6 hours
-6-24 hours
-1-3 days
-4-7 days
-1-4 weeks
-More than 4 weeks
-```
-
-There is no option below 15 minutes because students are expected to think by themselves for at least 15 minutes before using AI.
-
-### Time Fields
-
-Use these two fields in `submission.md`:
-
-```text
-Time spent before using AI:
-Total time spent on this problem before writing this submission:
-```
-
-If AI was used:
-
-```text
-Time spent before using AI: 30-60 minutes
-Total time spent on this problem before writing this submission: 1-3 hours
-```
-
-If AI was not used:
-
-```text
-Time spent before using AI: Not applicable because I did not use AI
-Total time spent on this problem before writing this submission: 1-3 hours
-```
+- first plan,
+- final approach,
+- at least 3 test cases,
+- independent time spent on this problem.
 
 ### Code in `submission.md`
 
@@ -415,17 +338,9 @@ Use the OJ submission ID instead.
 
 The submitted code should be checked in the OJ.
 
-### Academic Integrity for `submission.md`
-
-`submission.md` must be written by the student in their own words.
-
-Do not ask AI to write `submission.md` for you.
-
-AI may help review clarity or grammar after the student has written the content, but AI must not generate the content for the student.
-
 ---
 
-## 9. When to Use `AI_REFLECTION_TEMPLATE.md`
+## 10. When to Use `AI_REFLECTION_TEMPLATE.md`
 
 Use `AI_REFLECTION_TEMPLATE.md` to create a file named:
 
@@ -437,31 +352,20 @@ ai_reflection.md
 
 If AI was used on a non-learning-log problem, `ai_reflection.md` is not required, but the student must still understand and explain the solution when asked.
 
-### When to Start `ai_reflection.md`
+You may read `AI_REFLECTION_TEMPLATE_sample.md` as an example before writing your own `ai_reflection.md`.
 
-Start `ai_reflection.md` after the first time you use AI for a learning-log-required problem.
-
-You may take brief notes while working.
-
-### When to Finish `ai_reflection.md`
-
-Finish `ai_reflection.md` after:
-
-1. testing your code in VS Code,
-2. submitting to the OJ, if submitted,
-3. knowing the current OJ status.
-
-### What `ai_reflection.md` Should Explain
+Do not copy the sample content into your own work.
 
 Your `ai_reflection.md` should explain:
 
-1. which AI tool you used,
-2. what you asked AI to help with,
-3. what AI helped you notice,
-4. what you tested or verified by yourself,
-5. what you changed before submitting,
-6. current OJ status,
-7. what you learned.
+1. OJ problem number/title,
+2. OJ submission ID,
+3. OJ status,
+4. which AI tool you used,
+5. what you asked AI to help with,
+6. what AI helped you notice,
+7. what you checked or changed by yourself,
+8. what you learned.
 
 The reflection must describe your real process.
 
@@ -469,17 +373,9 @@ Do not ask AI to invent the reflection for you.
 
 AI may help with grammar, formatting, or clarity after you write your own reflection.
 
-AI must not:
-
-- invent what happened,
-- exaggerate your work,
-- claim that you tested something you did not test,
-- claim that you understood something you cannot explain,
-- write a reflection that does not match your actual process.
-
 ---
 
-## 10. Recommended Student GitHub Repository Structure
+## 11. Recommended Student GitHub Repository Structure
 
 Each student should create one public GitHub repository for learning-log-required records.
 
@@ -531,7 +427,7 @@ The repository should contain only the student's own problem-solving records, ow
 
 ---
 
-## 11. What to Put in Each Learning Log Folder
+## 12. What to Put in Each Learning Log Folder
 
 Each learning log folder may contain:
 
@@ -567,7 +463,7 @@ Only OJ submission is required.
 
 ---
 
-## 12. Final Reminder
+## 13. Final Reminder
 
 AI can help you think, debug, and test.
 
