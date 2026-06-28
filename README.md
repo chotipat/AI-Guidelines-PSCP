@@ -33,14 +33,16 @@ The main goal is to help students develop problem-solving and programming skills
 | File | Purpose |
 |---|---|
 | `README.md` | Main course policy and submission rules |
+| `README.th.md` | Thai version of the main course policy and submission rules |
 | `instructions/COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini, and similar AI tools |
 | `instructions/AGENTS.md` | Shared course AI rules for coding agents. Codex can use this file directly |
 | `instructions/CLAUDE.md` | Ready-to-use Claude Code instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Claude Code |
+| `instructions/GEMINI.md` | Ready-to-use Gemini CLI instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Gemini CLI |
 | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface |
 | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI coding tools |
 | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` | Tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
 | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code CLI and optional Claude desktop app / Claude Cowork use |
-| `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI, when provided by the instructor |
+| `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI and optional Gemini Code Assist agent mode use |
 | `templates/SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
 | `templates/AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
 | `examples/SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
@@ -54,6 +56,10 @@ Use `templates/SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
 You may read sample files in `examples/` to understand the expected level of detail, but you must not copy sample content into your own submission.
 
 Use `templates/AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` when AI was used on a learning-log-required problem.
+
+Thai `.th.md` files are provided for students who prefer reading the guidelines in Thai.
+
+The English files remain the primary files for AI tools and coding agents.
 
 ---
 
@@ -85,7 +91,7 @@ Choose the workflow based on how the AI tool is used, not based on whether the a
 | ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` |
 | ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
 | Claude Code CLI, or Claude desktop app / Claude Cowork if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
-| Gemini CLI, when provided by the instructor | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
+| Gemini CLI, or Gemini Code Assist agent mode if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
 | Other AI coding tools, only if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` |
 
 Important:
@@ -220,15 +226,58 @@ If you use Gemini CLI, read:
 workflows/STUDENT_WORKFLOW_GEMINI_CLI.md
 ```
 
-Gemini CLI is available only when provided or explicitly allowed by the instructor.
-
 For this course, the recommended Gemini workflow is:
 
 ```text
 VS Code + Gemini CLI
 ```
 
-Students should follow the tool-specific Gemini CLI workflow and any additional setup instructions provided by the instructor.
+Gemini CLI reads project context from a file named:
+
+```text
+GEMINI.md
+```
+
+The repository provides a ready-to-use Gemini CLI instruction wrapper at:
+
+```text
+instructions/GEMINI.md
+```
+
+This file imports the shared course AI rules from:
+
+```text
+instructions/AGENTS.md
+```
+
+Students should copy both files into their local course folder:
+
+```text
+pscp/AGENTS.md
+pscp/GEMINI.md
+```
+
+Recommended local working structure:
+
+```text
+pscp/
+├── AGENTS.md
+├── GEMINI.md
+├── oj001_work/
+│   └── main.py
+├── oj002_work/
+│   └── main.py
+└── oj003_work/
+    └── main.py
+```
+
+Students should not write their own `GEMINI.md`.
+
+Students should not copy random instructions from the internet into `GEMINI.md`.
+
+Always start Gemini CLI from the `pscp` folder so that Gemini CLI can read `GEMINI.md`.
+
+Do not use YOLO mode or auto-accept mode unless the instructor explicitly allows it.
 
 ---
 
@@ -535,7 +584,7 @@ Your `ai_reflection.md` should explain:
 2. OJ submission ID,
 3. OJ status,
 4. which AI tool you used,
-5. whether you used `instructions/COURSE_AI_INSTRUCTIONS.md`, `instructions/AGENTS.md`, `instructions/CLAUDE.md`, or another approved course instruction file,
+5. whether you used `instructions/COURSE_AI_INSTRUCTIONS.md`, `instructions/AGENTS.md`, `instructions/CLAUDE.md`, `instructions/GEMINI.md`, or another approved course instruction file,
 6. whether you read and followed the relevant workflow,
 7. what you asked AI to help with,
 8. what AI helped you notice,
