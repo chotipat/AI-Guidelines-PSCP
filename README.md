@@ -34,11 +34,12 @@ The main goal is to help students develop problem-solving and programming skills
 |---|---|
 | `README.md` | Main course policy and submission rules |
 | `instructions/COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini, and similar AI tools |
-| `instructions/AGENTS.md` | Ready-to-use Codex instruction file. Copy this to `pscp/AGENTS.md` before using Codex |
+| `instructions/AGENTS.md` | Shared course AI rules for coding agents. Codex can use this file directly |
+| `instructions/CLAUDE.md` | Ready-to-use Claude Code instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Claude Code |
 | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface |
 | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI coding tools |
 | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` | Tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
-| `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code or Claude Cowork, when provided by the instructor |
+| `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code CLI and optional Claude desktop app / Claude Cowork use |
 | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI, when provided by the instructor |
 | `templates/SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
 | `templates/AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
@@ -83,8 +84,8 @@ Choose the workflow based on how the AI tool is used, not based on whether the a
 |---|---|
 | ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` |
 | ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
-| Claude Code / Claude Cowork | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
-| Gemini CLI | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
+| Claude Code CLI, or Claude desktop app / Claude Cowork if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
+| Gemini CLI, when provided by the instructor | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
 | Other AI coding tools, only if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` |
 
 Important:
@@ -150,7 +151,88 @@ Use the OJ submission ID in `submission.md` instead.
 
 ---
 
-## 6. What Students Must Write by Themselves
+## 6. Special Note for Claude Code Users
+
+If you use Claude Code, read:
+
+```text
+workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md
+```
+
+For this course, the recommended Claude Code workflow is:
+
+```text
+VS Code + Claude Code CLI
+```
+
+Claude Code reads project instructions from a file named:
+
+```text
+CLAUDE.md
+```
+
+The repository provides a ready-to-use Claude Code instruction wrapper at:
+
+```text
+instructions/CLAUDE.md
+```
+
+This file imports the shared course AI rules from:
+
+```text
+instructions/AGENTS.md
+```
+
+Students should copy both files into their local course folder:
+
+```text
+pscp/AGENTS.md
+pscp/CLAUDE.md
+```
+
+Recommended local working structure:
+
+```text
+pscp/
+├── AGENTS.md
+├── CLAUDE.md
+├── oj001_work/
+│   └── main.py
+├── oj002_work/
+│   └── main.py
+└── oj003_work/
+    └── main.py
+```
+
+Students should not write their own `CLAUDE.md`.
+
+Students should not copy random instructions from the internet into `CLAUDE.md`.
+
+Always start Claude Code from the `pscp` folder so that Claude Code can read `CLAUDE.md`.
+
+---
+
+## 7. Special Note for Gemini CLI Users
+
+If you use Gemini CLI, read:
+
+```text
+workflows/STUDENT_WORKFLOW_GEMINI_CLI.md
+```
+
+Gemini CLI is available only when provided or explicitly allowed by the instructor.
+
+For this course, the recommended Gemini workflow is:
+
+```text
+VS Code + Gemini CLI
+```
+
+Students should follow the tool-specific Gemini CLI workflow and any additional setup instructions provided by the instructor.
+
+---
+
+## 8. What Students Must Write by Themselves
 
 The following parts must be written by the student. AI may review, ask questions, or give suggestions, but AI must not write these parts for submission.
 
@@ -183,7 +265,7 @@ The student is responsible for the final answer, final code, OJ submission, and 
 
 ---
 
-## 7. What Is a Learning Log?
+## 9. What Is a Learning Log?
 
 A learning log is a GitHub folder for one OJ problem that is specifically marked as learning-log required by the instructor or in the OJ.
 
@@ -211,7 +293,7 @@ Do not use other folder name formats.
 
 ---
 
-## 8. Overall Workflow for Every OJ Problem
+## 10. Overall Workflow for Every OJ Problem
 
 For every assigned OJ problem, follow this overall process.
 
@@ -312,18 +394,18 @@ However, students are still responsible for understanding and explaining their f
 
 ---
 
-## 9. What Must Be Submitted?
+## 11. What Must Be Submitted?
 
 There are two possible submission places:
 
 1. the course OJ,
 2. the student's own public GitHub learning log repository.
 
-### 9.1 OJ Submission
+### 11.1 OJ Submission
 
 For every assigned OJ problem, students must submit final code to the course OJ.
 
-### 9.2 GitHub Learning Log Submission
+### 11.2 GitHub Learning Log Submission
 
 Students must submit a GitHub learning log only for OJ problems that are marked as learning-log required.
 
@@ -344,7 +426,7 @@ Important rules:
 
 ---
 
-## 10. Responsibility for AI Use on Non-Learning-Log Problems
+## 12. Responsibility for AI Use on Non-Learning-Log Problems
 
 Students may use AI for OJ problems that are not marked as learning-log required.
 
@@ -367,7 +449,7 @@ If a student cannot explain their submitted code, the submission may be treated 
 
 ---
 
-## 11. When to Use `submission.md`
+## 13. When to Use `submission.md`
 
 Use:
 
@@ -429,7 +511,7 @@ The submitted code should be checked in the OJ.
 
 ---
 
-## 12. When to Use `ai_reflection.md`
+## 14. When to Use `ai_reflection.md`
 
 Use:
 
@@ -453,7 +535,7 @@ Your `ai_reflection.md` should explain:
 2. OJ submission ID,
 3. OJ status,
 4. which AI tool you used,
-5. whether you used `instructions/COURSE_AI_INSTRUCTIONS.md` or the provided `instructions/AGENTS.md`,
+5. whether you used `instructions/COURSE_AI_INSTRUCTIONS.md`, `instructions/AGENTS.md`, `instructions/CLAUDE.md`, or another approved course instruction file,
 6. whether you read and followed the relevant workflow,
 7. what you asked AI to help with,
 8. what AI helped you notice,
@@ -468,7 +550,7 @@ AI may help with grammar, formatting, or clarity after you write your own reflec
 
 ---
 
-## 13. Recommended Student GitHub Repository Structure
+## 15. Recommended Student GitHub Repository Structure
 
 Each student should create one public GitHub repository for learning-log-required records.
 
@@ -521,7 +603,7 @@ The repository should contain only the student's own problem-solving records, ow
 
 ---
 
-## 14. What to Put in Each Learning Log Folder
+## 16. What to Put in Each Learning Log Folder
 
 Each learning log folder may contain:
 
@@ -557,7 +639,7 @@ Only OJ submission is required.
 
 ---
 
-## 15. Final Reminder
+## 17. Final Reminder
 
 AI can help you think, debug, and test.
 
