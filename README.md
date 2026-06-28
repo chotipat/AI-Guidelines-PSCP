@@ -33,28 +33,26 @@ The main goal is to help students develop problem-solving and programming skills
 | File | Purpose |
 |---|---|
 | `README.md` | Main course policy and submission rules |
-| `COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini, and similar AI tools |
-| `AGENTS.md` | Ready-to-use Codex instruction file. Copy this to `pscp/AGENTS.md` before using Codex |
-| `STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface, such as ChatGPT, Claude, or Gemini |
-| `STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI tools that work inside VS Code, a terminal, CLI, or coding-agent environment |
-| `STUDENT_WORKFLOW_CHATGPT_CODEX.md` | Tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
-| `STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code or Claude Cowork, when provided by the instructor |
-| `STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI, when provided by the instructor |
-| `STUDENT_WORKFLOW_GITHUB_COPILOT_VSCODE.md` | Tool-specific workflow for GitHub Copilot in VS Code, when provided by the instructor |
-| `STUDENT_WORKFLOW_VSCODE_AI_EXTENSIONS.md` | Tool-specific workflow for VS Code AI extensions and similar tools, when provided by the instructor |
-| `SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
-| `SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
-| `SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
-| `AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
-| `AI_REFLECTION_TEMPLATE_sample.md` | Example of a completed `ai_reflection.md` |
+| `instructions/COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini, and similar AI tools |
+| `instructions/AGENTS.md` | Ready-to-use Codex instruction file. Copy this to `pscp/AGENTS.md` before using Codex |
+| `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface |
+| `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI coding tools |
+| `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` | Tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
+| `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code or Claude Cowork, when provided by the instructor |
+| `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` | Tool-specific workflow for Gemini CLI, when provided by the instructor |
+| `templates/SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
+| `templates/AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
+| `examples/SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
+| `examples/SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
+| `examples/AI_REFLECTION_TEMPLATE_sample.md` | Example of a completed `ai_reflection.md` |
 
 Read this `README.md` first.
 
-Use `SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
+Use `templates/SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
 
-You may read sample files to understand the expected level of detail, but you must not copy sample content into your own submission.
+You may read sample files in `examples/` to understand the expected level of detail, but you must not copy sample content into your own submission.
 
-Use `AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` when AI was used on a learning-log-required problem.
+Use `templates/AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` when AI was used on a learning-log-required problem.
 
 ---
 
@@ -83,16 +81,21 @@ Choose the workflow based on how the AI tool is used, not based on whether the a
 
 | If you use... | Read this workflow |
 |---|---|
-| ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `STUDENT_WORKFLOW_WEB_CHAT.md` |
-| ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app | `STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
-| Claude Code, Claude Cowork, Gemini CLI, GitHub Copilot in VS Code, VS Code AI extensions, AI coding agents, or terminal-based AI tools | `STUDENT_WORKFLOW_CODING_TOOLS.md` first, then the tool-specific workflow if provided |
+| ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` |
+| ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
+| Claude Code / Claude Cowork | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
+| Gemini CLI | `workflows/STUDENT_WORKFLOW_GEMINI_CLI.md` |
+| Other AI coding tools, only if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` |
 
 Important:
 
 - Free or paid account status is not the main distinction.
 - The main distinction is whether the AI is used only as a chat assistant or whether it can work inside the coding environment.
 - If the AI can read files, edit code, run commands, or suggest code directly inside VS Code or a terminal, treat it as a coding tool.
+- GitHub Copilot in VS Code and other VS Code AI extensions are not part of the official workflow unless explicitly allowed by the instructor.
 - Cursor and other AI-first editors are not part of the official workflow unless explicitly allowed by the instructor, because VS Code is the required editor for this course.
+
+If GitHub Copilot or another VS Code AI extension is explicitly allowed by the instructor, students must still follow `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md`, write and test final code in VS Code, submit to the OJ by themselves, and disclose AI use in `ai_reflection.md` when the problem is learning-log required.
 
 ---
 
@@ -101,7 +104,7 @@ Important:
 If you use ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app, read:
 
 ```text
-STUDENT_WORKFLOW_CHATGPT_CODEX.md
+workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md
 ```
 
 For this course, the recommended Codex workflow is:
@@ -116,7 +119,13 @@ Students should create a course folder such as:
 pscp/
 ```
 
-Then copy the provided `AGENTS.md` file into:
+Then copy the provided file:
+
+```text
+instructions/AGENTS.md
+```
+
+into the local course folder as:
 
 ```text
 pscp/AGENTS.md
@@ -241,22 +250,34 @@ If the student does not use AI, continue coding in VS Code.
 If the student uses AI through a browser/chat interface, follow:
 
 ```text
-STUDENT_WORKFLOW_WEB_CHAT.md
+workflows/STUDENT_WORKFLOW_WEB_CHAT.md
 ```
 
 If the student uses Codex, follow:
 
 ```text
-STUDENT_WORKFLOW_CHATGPT_CODEX.md
+workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md
 ```
 
-If the student uses another AI coding tool inside VS Code, a terminal, CLI, or coding-agent environment, follow:
+If the student uses Claude Code, follow:
 
 ```text
-STUDENT_WORKFLOW_CODING_TOOLS.md
+workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md
 ```
 
-and the tool-specific workflow if provided.
+If the student uses Gemini CLI, follow:
+
+```text
+workflows/STUDENT_WORKFLOW_GEMINI_CLI.md
+```
+
+If the student uses another AI coding tool explicitly allowed by the instructor, follow:
+
+```text
+workflows/STUDENT_WORKFLOW_CODING_TOOLS.md
+```
+
+and any additional instruction provided by the instructor.
 
 ### Step 4: Code in VS Code
 
@@ -346,15 +367,21 @@ If a student cannot explain their submitted code, the submission may be treated 
 
 ---
 
-## 11. When to Use `SUBMISSION_TEMPLATE.md`
+## 11. When to Use `submission.md`
 
-Use `SUBMISSION_TEMPLATE.md` to create a file named:
+Use:
+
+```text
+templates/SUBMISSION_TEMPLATE.md
+```
+
+to create a file named:
 
 ```text
 submission.md
 ```
 
-You may read `SUBMISSION_TEMPLATE_sample_no_AI.md` or `SUBMISSION_TEMPLATE_sample_AI.md` as examples before writing your own `submission.md`.
+You may read the examples in `examples/` before writing your own `submission.md`.
 
 Do not copy the sample content into your own work.
 
@@ -392,18 +419,6 @@ Finish `submission.md` after:
 3. submitting to the OJ, if submitted,
 4. knowing the current OJ status.
 
-`submission.md` should include:
-
-- OJ problem number or title,
-- OJ submission ID, if submitted,
-- OJ status,
-- student's problem understanding,
-- input, output, and constraints,
-- first plan,
-- final approach,
-- at least 3 test cases,
-- independent time spent on this problem.
-
 ### Code in `submission.md`
 
 Do not copy the full code into `submission.md`.
@@ -414,9 +429,15 @@ The submitted code should be checked in the OJ.
 
 ---
 
-## 12. When to Use `AI_REFLECTION_TEMPLATE.md`
+## 12. When to Use `ai_reflection.md`
 
-Use `AI_REFLECTION_TEMPLATE.md` to create a file named:
+Use:
+
+```text
+templates/AI_REFLECTION_TEMPLATE.md
+```
+
+to create a file named:
 
 ```text
 ai_reflection.md
@@ -426,17 +447,13 @@ ai_reflection.md
 
 If AI was used on a non-learning-log problem, `ai_reflection.md` is not required, but the student must still understand and explain the solution when asked.
 
-You may read `AI_REFLECTION_TEMPLATE_sample.md` as an example before writing your own `ai_reflection.md`.
-
-Do not copy the sample content into your own work.
-
 Your `ai_reflection.md` should explain:
 
 1. OJ problem number/title,
 2. OJ submission ID,
 3. OJ status,
 4. which AI tool you used,
-5. whether you used `COURSE_AI_INSTRUCTIONS.md` or the provided `AGENTS.md`,
+5. whether you used `instructions/COURSE_AI_INSTRUCTIONS.md` or the provided `instructions/AGENTS.md`,
 6. whether you read and followed the relevant workflow,
 7. what you asked AI to help with,
 8. what AI helped you notice,

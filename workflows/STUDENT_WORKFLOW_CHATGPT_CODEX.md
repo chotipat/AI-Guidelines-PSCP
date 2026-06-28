@@ -68,13 +68,13 @@ Even when using the Codex app, students must still:
 If you use ChatGPT only as normal browser chat, use:
 
 ```text
-STUDENT_WORKFLOW_WEB_CHAT.md
+workflows/STUDENT_WORKFLOW_WEB_CHAT.md
 ```
 
 If you use another AI coding tool, use:
 
 ```text
-STUDENT_WORKFLOW_CODING_TOOLS.md
+workflows/STUDENT_WORKFLOW_CODING_TOOLS.md
 ```
 
 ---
@@ -83,12 +83,7 @@ STUDENT_WORKFLOW_CODING_TOOLS.md
 
 VS Code is the official editor for this course.
 
-Students must use VS Code for:
-
-- writing Python code,
-- running Python code,
-- testing Python code,
-- preparing final code before OJ submission.
+Students must use VS Code for writing, running, testing, and preparing final code before OJ submission.
 
 Codex is only an assistant.
 
@@ -274,11 +269,13 @@ Codex can use a file named:
 AGENTS.md
 ```
 
-This file tells Codex how it should behave in the project.
+For this course, the instructor provides a ready-to-use file at:
 
-For this course, the instructor provides a ready-to-use `AGENTS.md` file.
+```text
+instructions/AGENTS.md
+```
 
-Students should download or copy the provided `AGENTS.md` file into:
+Students should copy this file into their local course folder as:
 
 ```text
 pscp/AGENTS.md
@@ -288,9 +285,9 @@ Students should not write their own `AGENTS.md`.
 
 Students should not copy random instructions from the internet into `AGENTS.md`.
 
-Students do not need to manually copy the full `COURSE_AI_INSTRUCTIONS.md` into Codex each time.
+Students do not need to manually copy the full `instructions/COURSE_AI_INSTRUCTIONS.md` into Codex each time.
 
-The provided `AGENTS.md` already contains the course AI rules.
+The provided `instructions/AGENTS.md` already contains the course AI rules.
 
 ### Important
 
