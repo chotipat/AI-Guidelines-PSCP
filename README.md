@@ -35,7 +35,6 @@ The main goal is to help students develop problem-solving and programming skills
 | `README.md` | Main course policy and submission rules |
 | `README.th.md` | Thai version of the main course policy and submission rules |
 | `instructions/COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini web chat, and similar AI tools |
-| `instructions/COURSE_AI_INSTRUCTIONS.th.md` | Thai explanation of the course AI coach instructions |
 | `instructions/AGENTS.md` | Shared course AI rules for coding agents. Codex can use this file directly |
 | `instructions/CLAUDE.md` | Ready-to-use Claude Code instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Claude Code |
 | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface |
@@ -51,6 +50,9 @@ The main goal is to help students develop problem-solving and programming skills
 | `examples/SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
 | `examples/SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
 | `examples/AI_REFLECTION_TEMPLATE_sample.md` | Example of a completed `ai_reflection.md` |
+| `examples/SUBMISSION_TEMPLATE_sample_no_AI.th.md` | Thai example of a completed `submission.md` when AI was not used |
+| `examples/SUBMISSION_TEMPLATE_sample_AI.th.md` | Thai example of a completed `submission.md` when AI was used |
+| `examples/AI_REFLECTION_TEMPLATE_sample.th.md` | Thai example of a completed `ai_reflection.md` |
 
 Read this `README.md` or `README.th.md` first.
 
@@ -60,9 +62,9 @@ Use `templates/AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` 
 
 You may read sample files in `examples/` to understand the expected level of detail, but you must not copy sample content into your own submission.
 
-Thai `.th.md` files are provided for the README, course AI instructions, and workflow documents.
+Thai `.th.md` files are provided for the README, workflow documents, and sample examples.
 
-The English files remain the primary files for AI tools and coding agents.
+The English instruction files remain the primary files for AI tools and coding agents.
 
 ---
 
