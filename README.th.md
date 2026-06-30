@@ -496,25 +496,13 @@ AI อาจช่วยเรื่อง grammar, formatting หรือ clar
 ชื่อ repository ที่แนะนำ:
 
 ```text
-pscp-<student-id>
-```
-
-ให้แทน `<student-id>` ด้วยเลขประจำตัวนักศึกษาของตนเอง
-
-หรือพูดง่าย ๆ คือรูปแบบ `pscp-เลขประจำตัวนักศึกษา`
-
-ไม่ต้องใส่เครื่องหมาย `< >` ในชื่อ repository จริง
-
-ตัวอย่าง:
-
-```text
-pscp-66123456
+pscp-ai-learning-log
 ```
 
 โครงสร้างที่แนะนำ:
 
 ```text
-pscp-<student-id>/
+pscp-ai-learning-log/
 ├── README.md
 ├── oj001/
 │   ├── submission.md

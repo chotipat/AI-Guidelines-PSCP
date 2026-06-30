@@ -496,23 +496,13 @@ Each student should create one public GitHub repository for learning-log-require
 Recommended repository name:
 
 ```text
-pscp-<student-id>
-```
-
-Replace `<student-id>` with your own student ID.
-
-Do not include the angle brackets `< >` in the actual repository name.
-
-Example:
-
-```text
-pscp-66123456
+pscp-ai-learning-log
 ```
 
 Recommended structure:
 
 ```text
-pscp-<student-id>/
+pscp-ai-learning-log/
 ├── README.md
 ├── oj001/
 │   ├── submission.md
