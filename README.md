@@ -39,8 +39,6 @@ The main goal is to help students develop problem-solving and programming skills
 | `instructions/CLAUDE.md` | Ready-to-use Claude Code instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Claude Code |
 | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` | Workflow for AI tools used through a browser or chat interface |
 | `workflows/STUDENT_WORKFLOW_WEB_CHAT.th.md` | Thai workflow for AI tools used through a browser or chat interface |
-| `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` | General workflow for AI coding tools |
-| `workflows/STUDENT_WORKFLOW_CODING_TOOLS.th.md` | Thai general workflow for AI coding tools |
 | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` | Tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
 | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.th.md` | Thai tool-specific workflow for ChatGPT Codex, OpenAI Codex, Codex CLI, and optional Codex app use |
 | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code CLI and optional Claude desktop app / Claude Cowork use |
@@ -96,7 +94,6 @@ Choose the workflow based on how the AI tool is used, not based on whether the a
 | ChatGPT, Claude, Gemini, or another AI tool through a browser/chat interface | `workflows/STUDENT_WORKFLOW_WEB_CHAT.md` |
 | ChatGPT Codex, OpenAI Codex, Codex CLI, or Codex app | `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md` |
 | Claude Code CLI, or Claude desktop app / Claude Cowork if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` |
-| Other AI coding tools, only if explicitly allowed by the instructor | `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` |
 
 Important:
 
@@ -106,7 +103,7 @@ Important:
 - GitHub Copilot in VS Code and other VS Code AI extensions are not part of the official workflow unless explicitly allowed by the instructor.
 - Cursor and other AI-first editors are not part of the official workflow unless explicitly allowed by the instructor, because VS Code is the required editor for this course.
 
-If GitHub Copilot or another VS Code AI extension is explicitly allowed by the instructor, students must still follow `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md`, write and test final code in VS Code, submit to the OJ by themselves, and disclose AI use in `ai_reflection.md` when the problem is learning-log required.
+Other AI coding tools, VS Code AI extensions, and AI-first editors are not part of the course workflow unless the instructor announces a separate workflow.
 
 ---
 
@@ -176,15 +173,9 @@ pscp/AGENTS.md
 pscp/CLAUDE.md
 ```
 
-### Other AI Coding Tools
+### Tools Not Included in the Course Workflow
 
-Other AI coding tools may be used only if explicitly allowed by the instructor.
-
-If allowed, read:
-
-```text
-workflows/STUDENT_WORKFLOW_CODING_TOOLS.md
-```
+Other AI coding tools, VS Code AI extensions, and AI-first editors are not part of the course workflow unless the instructor announces a separate workflow.
 
 VS Code remains the official editor.
 
@@ -307,13 +298,7 @@ If the student uses Claude Code, follow:
 workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md
 ```
 
-If the student uses another AI coding tool explicitly allowed by the instructor, follow:
-
-```text
-workflows/STUDENT_WORKFLOW_CODING_TOOLS.md
-```
-
-and any additional instruction provided by the instructor.
+Other AI coding tools are not part of the course workflow unless the instructor announces a separate workflow.
 
 ### Step 4: Code in VS Code
 
