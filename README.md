@@ -44,7 +44,9 @@ The main goal is to help students develop problem-solving and programming skills
 | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md` | Tool-specific workflow for Claude Code CLI and optional Claude desktop app / Claude Cowork use |
 | `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.th.md` | Thai tool-specific workflow for Claude Code CLI and optional Claude desktop app / Claude Cowork use |
 | `templates/SUBMISSION_TEMPLATE.md` | Blank template for creating `submission.md`, required only for learning-log-required OJ problems |
+| `templates/SUBMISSION_TEMPLATE.th.md` | Thai version of the `submission.md` template |
 | `templates/AI_REFLECTION_TEMPLATE.md` | Blank template for `ai_reflection.md`, required only when AI was used on a learning-log-required OJ problem |
+| `templates/AI_REFLECTION_TEMPLATE.th.md` | Thai version of the `ai_reflection.md` template |
 | `examples/SUBMISSION_TEMPLATE_sample_no_AI.md` | Example of a completed `submission.md` when AI was not used |
 | `examples/SUBMISSION_TEMPLATE_sample_AI.md` | Example of a completed `submission.md` when AI was used |
 | `examples/AI_REFLECTION_TEMPLATE_sample.md` | Example of a completed `ai_reflection.md` |
@@ -60,7 +62,7 @@ Use `templates/AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` 
 
 You may read sample files in `examples/` to understand the expected level of detail, but you must not copy sample content into your own submission.
 
-Thai `.th.md` files are provided for the README, workflow documents, and sample examples.
+Thai `.th.md` files are provided for the README, workflow documents, templates, and sample examples.
 
 The English instruction files remain the primary files for AI tools and coding agents.
 
