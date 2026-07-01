@@ -222,7 +222,7 @@ Create one main folder for this course.
 Recommended folder name:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 Inside `pscp-<student-id>`, keep your OJ working folders.
