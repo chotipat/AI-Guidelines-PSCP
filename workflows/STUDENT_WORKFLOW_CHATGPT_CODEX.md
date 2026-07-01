@@ -230,7 +230,7 @@ Inside `pscp-<student-id>`, keep your OJ working folders.
 Example:
 
 ```text
-pscp-<student-id>/
+pscp-69123456/
 ├── AGENTS.md
 ├── oj2198_work/
 │   └── main.py
