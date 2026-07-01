@@ -230,18 +230,18 @@ Example:
 pscp/
 ├── AGENTS.md
 ├── CLAUDE.md
-├── oj001_work/
+├── oj2198_work/
 │   └── main.py
-├── oj002_work/
+├── oj0301_work/
 │   └── main.py
-└── oj003_work/
+└── oj1994_work/
     └── main.py
 ```
 
-For OJ problem 002, create:
+For OJ problem 0301, create:
 
 ```text
-pscp/oj002_work/main.py
+pscp/oj0301_work/main.py
 ```
 
 Use `main.py` for local coding and testing.
@@ -290,9 +290,9 @@ Recommended local structure:
 pscp/
 ├── AGENTS.md
 ├── CLAUDE.md
-├── oj001_work/
+├── oj2198_work/
 │   └── main.py
-└── oj002_work/
+└── oj0301_work/
     └── main.py
 ```
 
@@ -332,20 +332,20 @@ Open the folder:
 pscp
 ```
 
-Do not open only `oj002_work`.
+Do not open only `oj0301_work`.
 
 Open the main `pscp` folder so that you can see:
 
 ```text
 AGENTS.md
 CLAUDE.md
-oj002_work/
+oj0301_work/
 ```
 
 Then create or open:
 
 ```text
-oj002_work/main.py
+oj0301_work/main.py
 ```
 
 Write your first code attempt in `main.py`.
@@ -408,7 +408,7 @@ Use VS Code workflow.
 Do not write the full solution.
 
 Only look at this file:
-oj002_work/main.py
+oj0301_work/main.py
 
 Here is my current understanding:
 ...
@@ -434,7 +434,7 @@ Do not edit files yet.
 Do not run commands yet.
 ```
 
-Replace `oj002_work/main.py` with the actual folder name.
+Replace `oj0301_work/main.py` with the actual folder name.
 
 ---
 
@@ -443,7 +443,7 @@ Replace `oj002_work/main.py` with the actual folder name.
 Use this kind of prompt:
 
 ```text
-Please review oj002_work/main.py.
+Please review oj0301_work/main.py.
 
 Do not rewrite the whole file.
 
@@ -466,7 +466,7 @@ Use this kind of prompt:
 My code fails this test case.
 
 File:
-oj002_work/main.py
+oj0301_work/main.py
 
 Input:
 ...
@@ -524,7 +524,7 @@ Then, if the change is reasonable, allow only a small edit.
 Good instruction:
 
 ```text
-Apply only the smallest necessary change to oj002_work/main.py.
+Apply only the smallest necessary change to oj0301_work/main.py.
 
 Do not rewrite unrelated parts of the file.
 
@@ -550,13 +550,13 @@ Run the code in the VS Code terminal.
 Example:
 
 ```bash
-python oj002_work/main.py
+python oj0301_work/main.py
 ```
 
 or:
 
 ```bash
-python3 oj002_work/main.py
+python3 oj0301_work/main.py
 ```
 
 Test at least 3 different cases.
@@ -670,7 +670,7 @@ For OJ work folders, keep only what is needed for coding and testing.
 For example:
 
 ```text
-pscp/oj002_work/main.py
+pscp/oj0301_work/main.py
 ```
 
 Optional files such as `input.txt` may be used only for local testing.
@@ -697,7 +697,7 @@ Tell me:
 ### Code Review
 
 ```text
-Please review oj002_work/main.py.
+Please review oj0301_work/main.py.
 
 Do not edit the file yet.
 
@@ -830,13 +830,13 @@ Claude Code may run commands.
 For this course, common safe commands are usually:
 
 ```bash
-python oj002_work/main.py
+python oj0301_work/main.py
 ```
 
 or:
 
 ```bash
-python3 oj002_work/main.py
+python3 oj0301_work/main.py
 ```
 
 Be careful with commands that:

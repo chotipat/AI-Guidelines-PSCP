@@ -132,9 +132,9 @@ Claude Code ช่วยได้ เช่น:
     pscp/
     ├── AGENTS.md
     ├── CLAUDE.md
-    ├── oj001_work/
+    ├── oj2198_work/
     │   └── main.py
-    └── oj002_work/
+    └── oj0301_work/
         └── main.py
 
 ---
@@ -179,7 +179,7 @@ Repository เตรียมไฟล์ไว้ที่:
     Do not write the full solution.
 
     Only look at this file:
-    oj002_work/main.py
+    oj0301_work/main.py
 
     Here is my current understanding:
     ...

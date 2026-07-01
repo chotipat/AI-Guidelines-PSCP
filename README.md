@@ -236,10 +236,19 @@ Use one folder per learning-log-required OJ problem.
 Folder names must follow this format:
 
 ```text
-oj001
-oj002
-oj003
-...
+oj<problem-id>
+```
+
+Replace `<problem-id>` with the 4-digit OJ problem ID.
+
+Do not use the order in which you solved the problems.
+
+Examples:
+
+```text
+oj2198
+oj0301
+oj1994
 ```
 
 Do not use other folder name formats.
@@ -516,12 +525,12 @@ Recommended structure:
 ```text
 pscp-<student-id>/
 ├── README.md
-├── oj001/
+├── oj2198/
 │   ├── submission.md
 │   └── ai_reflection.md
-├── oj002/
+├── oj0301/
 │   └── submission.md
-└── oj003/
+└── oj1994/
     ├── submission.md
     └── ai_reflection.md
 ```
@@ -531,10 +540,17 @@ Use one folder per learning-log-required OJ problem.
 Folder names must follow this format only:
 
 ```text
-oj001
-oj002
-oj003
-...
+oj<problem-id>
+```
+
+The `<problem-id>` must be the 4-digit OJ problem ID, not the order in which the student solved the problems.
+
+Examples:
+
+```text
+oj2198
+oj0301
+oj1994
 ```
 
 The repository should be public so that the instructor can review it easily.
@@ -570,14 +586,14 @@ Use the OJ submission ID in `submission.md` instead.
 ### Example 1: Learning Log Required, No AI Used
 
 ```text
-oj001/
+oj0301/
 └── submission.md
 ```
 
 ### Example 2: Learning Log Required, AI Used
 
 ```text
-oj002/
+oj2198/
 ├── submission.md
 └── ai_reflection.md
 ```

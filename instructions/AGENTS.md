@@ -124,13 +124,13 @@ Before running any command, explain:
 For PSCP beginner OJ problems, usually only simple Python run commands are needed, such as:
 
 ```bash
-python oj002_work/main.py
+python oj0301_work/main.py
 ```
 
 or:
 
 ```bash
-python3 oj002_work/main.py
+python3 oj0301_work/main.py
 ```
 
 Do not run destructive or unnecessary commands.

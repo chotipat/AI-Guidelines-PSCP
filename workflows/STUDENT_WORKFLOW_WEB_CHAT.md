@@ -13,7 +13,7 @@ This workflow applies to both free and paid accounts if the tool is used mainly 
 
 This workflow does not cover AI coding tools that work inside VS Code, an IDE, a terminal, CLI, or coding-agent environment.
 
-For those tools, follow `workflows/STUDENT_WORKFLOW_CODING_TOOLS.md` or a tool-specific workflow.
+For Codex, follow `workflows/STUDENT_WORKFLOW_CHATGPT_CODEX.md`. For Claude Code, follow `workflows/STUDENT_WORKFLOW_CLAUDE_CODE.md`. Other AI coding tools are not part of the course workflow unless the instructor announces a separate workflow.
 
 ---
 
@@ -204,7 +204,7 @@ For a normal OJ problem, you do not need to submit `submission.md` or `ai_reflec
 
 Use this workflow when the problem is learning-log required and you do not use AI.
 
-1. Create a learning log folder, such as `oj001/`.
+1. Create a learning log folder, such as `oj2198/`.
 2. Copy `templates/SUBMISSION_TEMPLATE.md` and rename it as `submission.md`.
 3. Fill in your own problem understanding, first plan, final approach, tests, and OJ information.
 4. Code and test in VS Code.
@@ -214,7 +214,7 @@ Use this workflow when the problem is learning-log required and you do not use A
 The folder should contain:
 
 ```text
-oj001/
+oj2198/
 └── submission.md
 ```
 
@@ -224,7 +224,7 @@ oj001/
 
 Use this workflow when the problem is learning-log required and you use Web Chat AI.
 
-1. Create a learning log folder, such as `oj002/`.
+1. Create a learning log folder, such as `oj0301/`.
 2. Copy `templates/SUBMISSION_TEMPLATE.md` and rename it as `submission.md`.
 3. Before your first AI prompt, fill in at least problem information, independent time spent, current understanding, and first plan.
 4. Follow the required AI steps in Section 6.
@@ -237,7 +237,7 @@ Use this workflow when the problem is learning-log required and you use Web Chat
 The folder should contain:
 
 ```text
-oj002/
+oj0301/
 ├── submission.md
 └── ai_reflection.md
 ```
