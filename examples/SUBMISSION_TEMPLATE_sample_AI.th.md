@@ -39,6 +39,7 @@ Pass
 เลือกหนึ่งข้อ:
 
 ```text
+0-15 minutes
 15-30 minutes
 30-60 minutes
 1-3 hours
