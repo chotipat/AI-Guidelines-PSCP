@@ -302,7 +302,7 @@ Open VS Code.
 Open the folder:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 Do not open only `oj0301_work`.
@@ -346,10 +346,10 @@ On Windows PowerShell, you can also use:
 Get-Location
 ```
 
-The path should end with:
+The path should be:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 Then run:
