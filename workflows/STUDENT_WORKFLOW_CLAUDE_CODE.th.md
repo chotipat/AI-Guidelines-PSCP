@@ -6,6 +6,8 @@ Workflow ที่แนะนำคือ:
 
     VS Code + Claude Code CLI
 
+สำหรับเครื่อง Lab ที่ใช้ร่วมกัน ให้แทน `<student-id>` ด้วยเลขประจำตัวนักศึกษาของตนเอง เช่น `pscp-66123456/` และใช้เฉพาะ folder ของตนเองเท่านั้น
+
 ---
 
 ## 1. Claude Code คืออะไร
@@ -125,11 +127,11 @@ Claude Code ช่วยได้ เช่น:
 
 สร้าง folder หลัก:
 
-    pscp/
+    pscp-<student-id>/
 
 โครงสร้างที่แนะนำ:
 
-    pscp/
+    pscp-<student-id>/
     ├── AGENTS.md
     ├── CLAUDE.md
     ├── oj2198_work/
@@ -155,8 +157,8 @@ Repository เตรียมไฟล์ไว้ที่:
 
 ให้นักศึกษา copy ทั้งสองไฟล์ไปไว้ใน local folder:
 
-    pscp/AGENTS.md
-    pscp/CLAUDE.md
+    pscp-<student-id>/AGENTS.md
+    pscp-<student-id>/CLAUDE.md
 
 `CLAUDE.md` ใช้:
 
@@ -164,7 +166,7 @@ Repository เตรียมไฟล์ไว้ที่:
 
 เพื่อดึงกฎกลางจาก `AGENTS.md`
 
-ให้เริ่ม Claude Code จาก folder `pscp` เสมอ
+ให้เริ่ม Claude Code จาก folder `pscp-<student-id>` เสมอ
 
 ---
 

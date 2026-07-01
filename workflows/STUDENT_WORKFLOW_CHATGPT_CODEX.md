@@ -6,6 +6,8 @@ This document is written for students who are new to Codex.
 
 Read this file before using Codex on any OJ problem.
 
+For shared lab computers, replace `<student-id>` with your own student ID, for example `pscp-66123456/`, and use only your own folder.
+
 ---
 
 ## 1. What Is Codex?
@@ -223,12 +225,12 @@ Recommended folder name:
 pscp
 ```
 
-Inside `pscp`, keep your OJ working folders.
+Inside `pscp-<student-id>`, keep your OJ working folders.
 
 Example:
 
 ```text
-pscp/
+pscp-<student-id>/
 ├── AGENTS.md
 ├── oj2198_work/
 │   └── main.py
@@ -241,7 +243,7 @@ pscp/
 For OJ problem 0301, create:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 Use `main.py` for local coding and testing.
@@ -274,7 +276,7 @@ instructions/AGENTS.md
 Students should copy this file into their local course folder as:
 
 ```text
-pscp/AGENTS.md
+pscp-<student-id>/AGENTS.md
 ```
 
 Students should not write their own `AGENTS.md`.
@@ -287,7 +289,7 @@ The provided `instructions/AGENTS.md` already contains the course AI rules.
 
 ### Important
 
-Always start Codex from the `pscp` folder.
+Always start Codex from the `pscp-<student-id>` folder.
 
 This helps Codex find and follow the course `AGENTS.md`.
 
@@ -305,7 +307,7 @@ pscp
 
 Do not open only `oj0301_work`.
 
-Open the main `pscp` folder so that you can see:
+Open the main `pscp-<student-id>` folder so that you can see:
 
 ```text
 AGENTS.md
@@ -330,7 +332,7 @@ In VS Code, open:
 Terminal > New Terminal
 ```
 
-Make sure the terminal is at the `pscp` folder.
+Make sure the terminal is at the `pscp-<student-id>` folder.
 
 You can check with:
 
@@ -618,9 +620,9 @@ The instructor may ask you to explain:
 
 ---
 
-## 20. What Not to Put in the `pscp` Folder
+## 20. What Not to Put in the `pscp-<student-id>` Folder
 
-Do not put these in the `pscp` folder:
+Do not put these in the `pscp-<student-id>` folder:
 
 - API keys,
 - access tokens,
@@ -635,7 +637,7 @@ For OJ work folders, keep only what is needed for coding and testing.
 For example:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 Optional files such as `input.txt` may be used only for your own local testing.
@@ -841,8 +843,8 @@ Students may use the Codex app only if the instructor explicitly allows it.
 
 If the instructor allows the Codex app, students must still follow these rules:
 
-1. Choose the `pscp` folder as the project folder.
-2. Make sure the provided `AGENTS.md` file is inside the `pscp` folder.
+1. Choose the `pscp-<student-id>` folder as the project folder.
+2. Make sure the provided `AGENTS.md` file is inside the `pscp-<student-id>` folder.
 3. Use Codex only as a coach, reviewer, debugger, or test-case helper.
 4. Do not ask Codex to solve the whole OJ problem from zero.
 5. Do not let Codex submit to the OJ.

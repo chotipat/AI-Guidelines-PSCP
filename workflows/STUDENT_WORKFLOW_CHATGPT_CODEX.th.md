@@ -6,6 +6,8 @@
 
 อ่านไฟล์นี้ก่อนใช้ Codex กับโจทย์ OJ ทุกข้อ
 
+สำหรับเครื่อง Lab ที่ใช้ร่วมกัน ให้แทน `<student-id>` ด้วยเลขประจำตัวนักศึกษาของตนเอง เช่น `pscp-66123456/` และใช้เฉพาะ folder ของตนเองเท่านั้น
+
 ---
 
 ## 1. Codex คืออะไร
@@ -223,12 +225,12 @@ codex
 pscp
 ```
 
-ภายใน `pscp` ให้เก็บ OJ working folders
+ภายใน `pscp-<student-id>` ให้เก็บ OJ working folders
 
 ตัวอย่าง:
 
 ```text
-pscp/
+pscp-<student-id>/
 ├── AGENTS.md
 ├── oj2198_work/
 │   └── main.py
@@ -241,7 +243,7 @@ pscp/
 สำหรับ OJ problem 0301 ให้สร้าง:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 ใช้ `main.py` สำหรับเขียนและทดสอบ code ในเครื่อง
@@ -274,7 +276,7 @@ instructions/AGENTS.md
 นักศึกษาควร copy ไฟล์นี้ไปไว้ใน local course folder เป็น:
 
 ```text
-pscp/AGENTS.md
+pscp-<student-id>/AGENTS.md
 ```
 
 นักศึกษาไม่ควรเขียน `AGENTS.md` เอง
@@ -287,7 +289,7 @@ pscp/AGENTS.md
 
 ### Important
 
-ให้เริ่ม Codex จาก folder `pscp` เสมอ
+ให้เริ่ม Codex จาก folder `pscp-<student-id>` เสมอ
 
 วิธีนี้ช่วยให้ Codex หาและทำตาม course `AGENTS.md` ได้
 
@@ -305,7 +307,7 @@ pscp
 
 อย่าเปิดเฉพาะ `oj0301_work`
 
-ให้เปิด folder หลัก `pscp` เพื่อให้เห็น:
+ให้เปิด folder หลัก `pscp-<student-id>` เพื่อให้เห็น:
 
 ```text
 AGENTS.md
@@ -330,7 +332,7 @@ oj0301_work/main.py
 Terminal > New Terminal
 ```
 
-ตรวจว่า terminal อยู่ที่ folder `pscp`
+ตรวจว่า terminal อยู่ที่ folder `pscp-<student-id>`
 
 ตรวจได้ด้วย:
 
@@ -618,9 +620,9 @@ ai_reflection.md
 
 ---
 
-## 20. สิ่งที่ไม่ควรใส่ใน Folder `pscp`
+## 20. สิ่งที่ไม่ควรใส่ใน Folder `pscp-<student-id>`
 
-ห้ามใส่สิ่งเหล่านี้ใน folder `pscp`:
+ห้ามใส่สิ่งเหล่านี้ใน folder `pscp-<student-id>`:
 
 - API keys
 - access tokens
@@ -635,7 +637,7 @@ ai_reflection.md
 ตัวอย่าง:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 ไฟล์ optional เช่น `input.txt` ใช้ได้เฉพาะสำหรับการทดสอบในเครื่องของตนเอง
@@ -841,8 +843,8 @@ VS Code + Codex CLI
 
 ถ้าผู้สอนอนุญาตให้ใช้ Codex app นักศึกษายังต้องทำตามกฎต่อไปนี้:
 
-1. เลือก folder `pscp` เป็น project folder
-2. ตรวจว่าไฟล์ `AGENTS.md` ที่รายวิชาให้ไว้อยู่ใน folder `pscp`
+1. เลือก folder `pscp-<student-id>` เป็น project folder
+2. ตรวจว่าไฟล์ `AGENTS.md` ที่รายวิชาให้ไว้อยู่ใน folder `pscp-<student-id>`
 3. ใช้ Codex เป็นเพียง coach, reviewer, debugger หรือ test-case helper
 4. ห้ามขอให้ Codex แก้โจทย์ OJ ทั้งข้อจากศูนย์
 5. ห้ามให้ Codex ส่งเข้า OJ

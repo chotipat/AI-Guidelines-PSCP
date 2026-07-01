@@ -6,6 +6,8 @@ This document is written for students who are new to Claude Code.
 
 Read this file before using Claude Code on any OJ problem.
 
+For shared lab computers, replace `<student-id>` with your own student ID, for example `pscp-66123456/`, and use only your own folder.
+
 ---
 
 ## 1. What Is Claude Code?
@@ -222,12 +224,12 @@ Recommended folder name:
 pscp
 ```
 
-Inside `pscp`, keep OJ working folders.
+Inside `pscp-<student-id>`, keep OJ working folders.
 
 Example:
 
 ```text
-pscp/
+pscp-<student-id>/
 ├── AGENTS.md
 ├── CLAUDE.md
 ├── oj2198_work/
@@ -241,7 +243,7 @@ pscp/
 For OJ problem 0301, create:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 Use `main.py` for local coding and testing.
@@ -280,14 +282,14 @@ instructions/AGENTS.md
 Students should copy both files into their local course folder:
 
 ```text
-pscp/AGENTS.md
-pscp/CLAUDE.md
+pscp-<student-id>/AGENTS.md
+pscp-<student-id>/CLAUDE.md
 ```
 
 Recommended local structure:
 
 ```text
-pscp/
+pscp-<student-id>/
 ├── AGENTS.md
 ├── CLAUDE.md
 ├── oj2198_work/
@@ -316,7 +318,7 @@ This avoids copying the same course rules into many files.
 
 ### Important
 
-Always start Claude Code from the `pscp` folder.
+Always start Claude Code from the `pscp-<student-id>` folder.
 
 This helps Claude Code find and follow `CLAUDE.md`.
 
@@ -334,7 +336,7 @@ pscp
 
 Do not open only `oj0301_work`.
 
-Open the main `pscp` folder so that you can see:
+Open the main `pscp-<student-id>` folder so that you can see:
 
 ```text
 AGENTS.md
@@ -360,7 +362,7 @@ In VS Code, open:
 Terminal > New Terminal
 ```
 
-Make sure the terminal is at the `pscp` folder.
+Make sure the terminal is at the `pscp-<student-id>` folder.
 
 On macOS, Linux, or WSL, check with:
 
@@ -618,7 +620,7 @@ Mention:
 
 - that you used Claude Code,
 - whether you used `CLAUDE.md`,
-- whether you copied `instructions/AGENTS.md` and `instructions/CLAUDE.md` into the local `pscp` folder,
+- whether you copied `instructions/AGENTS.md` and `instructions/CLAUDE.md` into the local `pscp-<student-id>` folder,
 - whether you followed this workflow,
 - what you asked Claude Code to help with,
 - what Claude Code helped you notice,
@@ -653,9 +655,9 @@ The instructor may ask students to explain:
 
 ---
 
-## 20. What Not to Put in the `pscp` Folder
+## 20. What Not to Put in the `pscp-<student-id>` Folder
 
-Do not put these in the `pscp` folder:
+Do not put these in the `pscp-<student-id>` folder:
 
 - API keys,
 - access tokens,
@@ -670,7 +672,7 @@ For OJ work folders, keep only what is needed for coding and testing.
 For example:
 
 ```text
-pscp/oj0301_work/main.py
+pscp-<student-id>/oj0301_work/main.py
 ```
 
 Optional files such as `input.txt` may be used only for local testing.
@@ -874,7 +876,7 @@ The Claude desktop app, Claude Code inside the desktop app, and Claude Cowork ma
 If allowed, students must still follow these rules:
 
 1. Use VS Code as the official editor.
-2. Use the `pscp` project folder.
+2. Use the `pscp-<student-id>` project folder.
 3. Use the course AI rules.
 4. Use Claude only as a coach, reviewer, debugger, or test-case helper.
 5. Do not ask Claude to solve the whole OJ problem from zero.
