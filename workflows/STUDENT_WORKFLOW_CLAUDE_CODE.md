@@ -221,7 +221,7 @@ Create one main folder for this course.
 Recommended folder name:
 
 ```text
-pscp
+pscp-<student-di>
 ```
 
 Inside `pscp-<student-id>`, keep OJ working folders.
@@ -229,7 +229,7 @@ Inside `pscp-<student-id>`, keep OJ working folders.
 Example:
 
 ```text
-pscp-<student-id>/
+pscp-69123456/
 ├── AGENTS.md
 ├── CLAUDE.md
 ├── oj2198_work/
@@ -331,7 +331,7 @@ Open VS Code.
 Open the folder:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 Do not open only `oj0301_work`.
@@ -376,10 +376,10 @@ On Windows PowerShell, check with:
 Get-Location
 ```
 
-The path should end with:
+The path should be:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 Then run:
