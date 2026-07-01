@@ -34,6 +34,8 @@ The main goal is to help students develop problem-solving and programming skills
 |---|---|
 | `README.md` | Main course policy and submission rules |
 | `README.th.md` | Thai version of the main course policy and submission rules |
+| `policies/LAB_COMPUTER_USAGE.md` | Shared lab computer usage policy |
+| `policies/LAB_COMPUTER_USAGE.th.md` | Thai shared lab computer usage policy |
 | `instructions/COURSE_AI_INSTRUCTIONS.md` | Main AI coach instructions for ChatGPT, Claude, Gemini web chat, and similar AI tools |
 | `instructions/AGENTS.md` | Shared course AI rules for coding agents. Codex can use this file directly |
 | `instructions/CLAUDE.md` | Ready-to-use Claude Code instruction wrapper. Copy this together with `instructions/AGENTS.md` into `pscp/` before using Claude Code |
@@ -56,13 +58,17 @@ The main goal is to help students develop problem-solving and programming skills
 
 Read this `README.md` or `README.th.md` first.
 
+Read `policies/LAB_COMPUTER_USAGE.md` before using a shared lab computer.
+
+When using a shared lab computer, students must use their own `pscp-<student-id>/` folder, log out of all accounts after use, and ensure that AI tools do not access another student's files.
+
 Use `templates/SUBMISSION_TEMPLATE.md` to create your own `submission.md`.
 
 Use `templates/AI_REFLECTION_TEMPLATE.md` to create your own `ai_reflection.md` when AI was used on a learning-log-required problem.
 
 You may read sample files in `examples/` to understand the expected level of detail, but you must not copy sample content into your own submission.
 
-Thai `.th.md` files are provided for the README, workflow documents, templates, and sample examples.
+Thai `.th.md` files are provided for the README, policies, workflow documents, templates, and sample examples.
 
 The English instruction files remain the primary files for AI tools and coding agents.
 
