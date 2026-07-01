@@ -222,7 +222,7 @@ codex
 ชื่อ folder ที่แนะนำ:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 ภายใน `pscp-<student-id>` ให้เก็บ OJ working folders
@@ -230,7 +230,7 @@ pscp
 ตัวอย่าง:
 
 ```text
-pscp-<student-id>/
+pscp-69123456/
 ├── AGENTS.md
 ├── oj2198_work/
 │   └── main.py
@@ -302,7 +302,7 @@ pscp-<student-id>/AGENTS.md
 เปิด folder:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 อย่าเปิดเฉพาะ `oj0301_work`
@@ -346,10 +346,10 @@ pwd
 Get-Location
 ```
 
-path ควรลงท้ายด้วย:
+path ควรจะเป็น:
 
 ```text
-pscp
+pscp-<student-id>
 ```
 
 จากนั้นรัน:
