@@ -39,6 +39,7 @@ Independent time spent on this problem:
 Choose one:
 
 ```text
+0-15 minutes
 15-30 minutes
 30-60 minutes
 1-3 hours
