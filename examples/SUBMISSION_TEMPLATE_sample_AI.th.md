@@ -15,7 +15,7 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-OJ002 - Sum of Numbers
+OJ2198 - Sum of Numbers
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:

@@ -15,7 +15,7 @@ Because AI was used, the student must also complete `ai_reflection.md`.
 OJ problem number/title:
 
 ```text
-OJ002 - Sum of Numbers
+OJ2198 - Sum of Numbers
 ```
 
 OJ submission ID, if submitted:

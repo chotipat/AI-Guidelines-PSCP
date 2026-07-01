@@ -15,7 +15,7 @@ This sample also shows how to disclose small human help. Because AI was not used
 OJ problem number/title:
 
 ```text
-OJ001 - Even or Odd
+OJ0301 - Even or Odd
 ```
 
 OJ submission ID, if submitted:

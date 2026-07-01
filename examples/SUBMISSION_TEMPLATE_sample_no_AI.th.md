@@ -15,7 +15,7 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-OJ001 - Even or Odd
+OJ0301 - Even or Odd
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:

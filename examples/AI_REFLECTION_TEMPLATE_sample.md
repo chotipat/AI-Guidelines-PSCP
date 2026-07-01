@@ -11,7 +11,7 @@ Use it only to understand the expected level of detail.
 OJ problem number/title:
 
 ```text
-OJ002 - Sum of Numbers
+OJ2198 - Sum of Numbers
 ```
 
 OJ submission ID, if submitted:
