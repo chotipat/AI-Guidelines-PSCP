@@ -541,6 +541,63 @@ pscp-<student-id>/
     └── ai_reflection.md
 ```
 
+### Local Work Folder vs GitHub Learning Log Folder
+
+Students should separate local coding work from the GitHub learning log.
+
+Use:
+
+```text
+oj<problem-id>_work/
+```
+
+for local coding work, testing, and temporary files.
+
+Use:
+
+```text
+oj<problem-id>/
+```
+
+for the GitHub learning log.
+
+Example:
+
+```text
+pscp-<student-id>/
+├── oj2198_work/
+│   ├── main.py
+│   └── input.txt
+├── oj2198/
+│   ├── submission.md
+│   └── ai_reflection.md
+├── oj0301_work/
+│   └── main.py
+└── oj0301/
+    └── submission.md
+```
+
+The `_work` folder is for local work only.
+
+Do not push `oj<problem-id>_work/` to GitHub.
+
+Do not include full source code files such as `main.py` in the GitHub learning log.
+
+Use the OJ submission ID in `submission.md` instead.
+
+Recommended `.gitignore` for the student's repository:
+
+```gitignore
+*_work/
+main.py
+__pycache__/
+*.pyc
+.env
+.DS_Store
+```
+
+This helps prevent students from accidentally pushing local code, temporary files, or private files to GitHub.
+
 Use one folder per learning-log-required OJ problem.
 
 Folder names must follow this format only:
@@ -570,7 +627,7 @@ However, students must not include:
 - access tokens or API keys,
 - screenshots containing personal information,
 - course materials that are not allowed to be redistributed,
-- full source code files such as `solution.py`.
+- full source code files such as `main.py`.
 
 The repository should contain only the student's own problem-solving records, own test cases, own OJ submission references, and own AI reflections.
 
@@ -585,7 +642,7 @@ Each learning log folder may contain:
 | `submission.md` | Required for every learning-log-required problem | Problem-solving record and OJ submission reference |
 | `ai_reflection.md` | Required only if AI was used on that learning-log-required problem | Reflection on how AI helped and what the student verified independently |
 
-Do not include `solution.py` in the GitHub learning log.
+Do not include `main.py` in the GitHub learning log.
 
 Use the OJ submission ID in `submission.md` instead.
 
